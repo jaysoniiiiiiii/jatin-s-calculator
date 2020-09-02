@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #fff;
+}
+.calculator
+{
+	position: relative;
+	display: grid;
+}
+.calculator .value
+{
+	grid-column: span 4;
+	height: 100px;
+	text-align: right;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 18px;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px; 
+	background: lightgray;
+}
+.calculator span
+{
+	display: grid;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	background: #0c2835;
+	place-items: center;
+	border: 0.8px solid rgba(0,0,0,1);
+}
+.calculator span:active
+{
+	background: orange;
+	color: #111;
+}
+.calculator span.clear
+{
+	grid-column: span 2;
+	background: #ff3077;
+	width: 120px;	
+}
+.calculator span.plus
+{
+	/* /grid-row: span 2;/ */
+	height: 60px;
+}
+.calculator span.equal
+{
+	background: #03b1ff;
+	border-bottom-right-radius: 16px;
+}
+.calculator span.z
+{
+	border-bottom-left-radius: 16px;
+}
+
+/* @media(min-width: 270px) and (max-width: 500px)
+{
+.calculator .value
+{
+	grid-column: span 4;
+	height: 100px;
+	text-align: right;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 18px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px; 
+
+}
+.calculator span
+{
+	display: grid;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	background: #0c2835;
+	place-items: center;
+	border: 0.8px solid rgba(0,0,0,1);
+}
+} */
